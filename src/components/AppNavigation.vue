@@ -1,20 +1,20 @@
 <template>
   <div>
-    <b-navbar toggleable="xl" class="dark-nav" type="dark" >
-      <b-navbar-brand href="#">IEEE ZSB <!-- ADD SVG LOGO --></b-navbar-brand>
+    <b-navbar :toggleable="this.navbarCollapse" class="dark-nav" type="dark" >
+      <b-navbar-brand to="/">IEEE ZSB <!-- ADD SVG LOGO --></b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" type="dark" is-nav>
         <b-navbar-nav fixed>
-          <b-nav-item class="hover-underline" href="#"><a>Home</a></b-nav-item>
-          <b-nav-item class="hover-underline" href="#"><a>About Us</a></b-nav-item>
-          <b-nav-item class="hover-underline" href="#">Events</b-nav-item>
-          <b-nav-item class="hover-underline" href="#">Activities</b-nav-item>
-          <b-nav-item class="hover-underline" href="#">Membership</b-nav-item>
-          <b-nav-item class="hover-underline" href="#">FAQ</b-nav-item>
-          <b-nav-item class="hover-underline" href="#">Committees</b-nav-item>
-          <b-nav-item class="hover-underline" href="#">Contact</b-nav-item>
+          <b-nav-item class="hover-underline" to="/"><a>Home</a></b-nav-item>
+          <b-nav-item class="hover-underline" to="/about"><a>About Us</a></b-nav-item>
+          <b-nav-item class="hover-underline" to="/about">Events</b-nav-item>
+          <b-nav-item class="hover-underline" to="/about">Activities</b-nav-item>
+          <b-nav-item class="hover-underline" to="/about">Membership</b-nav-item>
+          <b-nav-item class="hover-underline" to="/about">FAQ</b-nav-item>
+          <b-nav-item class="hover-underline" to="/about">Committees</b-nav-item>
+          <b-nav-item class="hover-underline" to="/about">Contact</b-nav-item>
         </b-navbar-nav>
 
         <b-navbar-nav class="ml-auto">
@@ -34,11 +34,15 @@
 
 <script>
 export default {
-  name: 'appNavigation',
+  name: 'AppNavigation',
   data() {
     return {
-      lang: "EN"
+      lang: "EN",
+      navbarCollapse: "xl"
     }
+  },
+  props: {
+/*     navbarCollapse */
   },
   methods: {
     changeSiteLangToAR() {

@@ -1,21 +1,27 @@
 <template>
   <div id="app">
-    <app-navigation/>
+    <app-navigation :navbarCollapse='navbarCollapse'/>
+    <router-view/>
   </div>
 </template>
 
 <script>
-import appNavigation from './components/AppNavigation.vue'
-
+import AppNavigation from './components/AppNavigation.vue'
 export default {
-  name: 'App',
-  components: {
-    appNavigation
-  }
+  data() {
+    return {
+      navbarCollapse: "xl"
+    }
+  },
+  components: { 
+    AppNavigation
+   },
 }
 </script>
 
 <style>
-#app {
+body {
+  height: 100%;
+  width: 100%;
 }
 </style>
