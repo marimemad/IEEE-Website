@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <app-navigation :navbarCollapse='navbarCollapse'/>
-    <router-view/>
+    <router-view style="z-index:0"/>
   </div>
 </template>
 
@@ -20,8 +20,12 @@ export default {
 </script>
 
 <style>
+#app {
+  margin: 0;
+  padding: 0;
+}
 body {
-  height: 100%;
-  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 </style>

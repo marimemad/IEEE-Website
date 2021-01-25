@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <b-navbar :toggleable="this.navbarCollapse" class="dark-nav" type="dark" >
+  <section class="navigation">
+    <b-navbar toggleable="xl" class="dark-nav" type="dark" >
       <b-navbar-brand to="/">IEEE ZSB <!-- ADD SVG LOGO --></b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -29,7 +29,7 @@
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -57,6 +57,12 @@ export default {
 </script>
 
 <style scoped>
+.navigation {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
 .dark-nav {
   background-color: #1a1a2e;
 }

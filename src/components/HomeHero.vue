@@ -1,8 +1,11 @@
 <template>
   <div class="hero-image">
-    <div class="hero-text">
-      <div class="display-3">IEEE EXPERIENCE</div>
-      <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde explicabo eligendi aliquid. Nihil eaque aliquam dolore incidunt corporis eum vitae.</h2>
+    <div data-aos-once="true" data-aos="fade-up" class="hero-text">
+      <h2>
+        <strong>IEEE EXPERIENCE</strong>
+        <br>
+        <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error veritatis magni delectus quae quo nulla. Ea corporis pariatur tenetur architecto!</small>
+      </h2>
     </div>
   </div>
 </template>
@@ -15,12 +18,10 @@ export default {
 
 <style scoped>
 .hero-image {
-/*   background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url('../assets/blurred-hero-bg-opt.jpg'); */
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/blurred-hero-bg-opt.jpg');
-/*   background: url('../assets/blurred-hero-bg-opt.jpg'); */
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/blurred-hero-bg-opt.jpg');
   background-size: cover;
   width: 100%;
-  height: 90vh;
+  height: 95vh;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
@@ -30,14 +31,22 @@ export default {
 }
 
 .hero-text {
-/*   display: inline-flex;
-  flex-direction: column;
-  justify-content: center;
-  */
+  display: block;
   text-align: center;
   color: white;
-  text-shadow: 3px;
-  padding: 3em;
-  padding-bottom: 8em;
+  overflow: hidden;
+}
+
+h2 {
+  font-size: 3em;
+  padding: 2em 5em;
+}
+
+
+@media (max-width: 1000px) {
+  h2 {
+    font-size: 2em;
+    padding: 2em 1em;
+  }
 }
 </style>

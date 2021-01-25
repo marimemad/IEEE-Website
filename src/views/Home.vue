@@ -1,20 +1,20 @@
 <template>
   <div class="home">
     <home-hero/>
-    <breif/>
+    <cards-container/>
   </div>
 </template>
 
 <script>
 
 import HomeHero from '@/components/HomeHero'
-import Breif from '@/components/Breif'
+import CardsContainer from '@/components/CardsContainer'
 
 export default {
   name: 'Home',
   components: {
     HomeHero,
-    Breif,
+    CardsContainer,
   }
 }
 </script>
