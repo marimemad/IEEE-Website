@@ -85,9 +85,28 @@
     },
 
 
-    "activities":{
-
-    },
+    "activities":[
+        {
+            "title": "Activity 1",
+            "description": "This is the activity's description",
+            "date": "XX/XX/2021"
+        },
+        {
+            "title": "Activity 2",
+            "description": "This is the activity's description",
+            "date": "XX/XX/2021"
+        },
+        {
+            "title": "Activity 3",
+            "description": "This is the activity's description",
+            "date": "XX/XX/2021"
+        },
+        {
+            "title": "Activity 4",
+            "description": "This is the activity's description",
+            "date": "XX/XX/2021"
+        }
+    ],
 
 
     "membership":{
