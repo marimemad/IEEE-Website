@@ -1,10 +1,10 @@
 <template>
-  <div class="section">
+  <section>
     <div class="cards-container">
       <breif/>
       <membership-vision/>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style scoped>
-.section {
+section {
   background: linear-gradient(rgba(0, 0, 80, 0.4), rgba(0, 0, 80, 0.4)), url("../assets/bg-pattern.png");
   background-repeat: repeat;
   padding: 0;
