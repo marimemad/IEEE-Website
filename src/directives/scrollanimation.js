@@ -4,7 +4,7 @@ const animatedScrollObserver = new IntersectionObserver(
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('enter');
-                animatedScrollObserver.unobserve();
+                animatedScrollObserver.unobserve(entry.target);
             }
         });
     }
