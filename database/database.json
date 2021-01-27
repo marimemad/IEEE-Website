@@ -88,22 +88,22 @@
     "activities":[
         {
             "title": "Activity 1",
-            "description": "This is the activity's description",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur accusantium sit vitae est ex repudiandae odio? Vero, iusto? Facilis tempore vel minus et ipsa fugiat? Quisquam fuga architecto harum.",
             "date": "XX/XX/2021"
         },
         {
             "title": "Activity 2",
-            "description": "This is the activity's description",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur accusantium sit vitae est ex repudiandae odio? Vero, iusto? Facilis tempore vel minus et ipsa fugiat? Quisquam fuga architecto harum.",
             "date": "XX/XX/2021"
         },
         {
             "title": "Activity 3",
-            "description": "This is the activity's description",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur accusantium sit vitae est ex repudiandae odio? Vero, iusto? Facilis tempore vel minus et ipsa fugiat? Quisquam fuga architecto harum.",
             "date": "XX/XX/2021"
         },
         {
             "title": "Activity 4",
-            "description": "This is the activity's description",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur accusantium sit vitae est ex repudiandae odio? Vero, iusto? Facilis tempore vel minus et ipsa fugiat? Quisquam fuga architecto harum.",
             "date": "XX/XX/2021"
         }
     ],

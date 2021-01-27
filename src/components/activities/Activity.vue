@@ -1,5 +1,5 @@
 <template>
-  <div class="activity" :style="backgroundStyles(background)">
+  <div class="activity" :style="backgroundStyles(backgroundImage, backgroundColor)">
     <p class="activity-duration">Date: {{ date }}</p>
     <h3 class="activity-title">{{ title }}</h3>
     <p class="activity-description">{{ description }}</p>
@@ -18,9 +18,13 @@ export default {
       type: String,
       default: "This is an activity",
     },
-    background: {
+    backgroundColor: {
       type: String,
-      default: "https://1.bp.blogspot.com/-bik6AotfT0M/X4R87hMVaqI/AAAAAAAAPws/JmmIww-SNscuR1MeW4_4wlrRT1SGXbNyQCLcBGAsYHQ/s0/AndroidStudio_logo.png",
+      default: "#FFF",
+    },
+    backgroundImage: {
+      type: String,
+      default: ""
     },
     date: {
       type: String,
@@ -28,9 +32,10 @@ export default {
     },
   },
   methods: {
-    backgroundStyles(background) {
+    backgroundStyles(backgroundImage, backgroundColor) {
       return {
-        "background-image": `url(${background})`,
+        "background-image": `url(${backgroundImage})`,
+        "backgroundColor": `${backgroundColor}`,
       };
     },
   },
@@ -42,6 +47,7 @@ export default {
   background-size: cover;
   padding: 20px;
   border-radius: 10px;
+  border: 1px solid #cfcfcf;
 }
 
 .activity-duration {

@@ -6,22 +6,19 @@
         <h1>Explore what we do</h1>
       </div>
     </div>
-    <div>
-      <div
-        class="row"
-        v-for="index in Math.ceil(database.length / 3) + 1"
-        :key="index"
-      >
-        <div class="col" v-for="id in 3" :key="id">
+    <b-container id="activity-cards">
+      <b-row v-for="index in Math.ceil(database.length / 3) + 1" :key="index">
+        <b-col sm="12" md="4" v-for="id in 3" :key="id">
           <Activity
+            class="activity"
             v-if="getTranslatedId(id, index) < database.length"
             :title="database[getTranslatedId(id, index)].title"
             :description="database[getTranslatedId(id, index)].description"
             :date="database[getTranslatedId(id, index)].date"
           />
-        </div>
-      </div>
-    </div>
+        </b-col>
+      </b-row>
+    </b-container>
   </div>
 </template>
 
@@ -52,6 +49,10 @@ export default {
 </script>
 
 <style scoped>
+#activities {
+  background-color: #eee;
+}
+
 #activity-landing {
   height: 100vh;
   background-image: url("../assets/activities/background.jpg");
@@ -68,5 +69,14 @@ export default {
 #activity-heading h1 {
   margin: 0;
   text-align: center;
+}
+
+#activity-cards {
+  padding: 50px 0;
+  height: 100vh;
+}
+
+.activity {
+  margin: 15px 0;
 }
 </style>
