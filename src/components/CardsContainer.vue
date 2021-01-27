@@ -1,31 +1,100 @@
 <template>
   <section>
-    <div class="cards-container">
-      <breif/>
-      <membership-vision/>
-    </div>
+    <b-container mx="0">
+      <section>     <!-- ABOUT IEEE -->
+        <b-row>
+          <breif/>
+        </b-row>
+      </section>
+
+      <b-row class="py-5">
+        <hr>
+      </b-row>
+
+      <section>     <!-- ?? -->
+        <b-row class="justify-content-center pb-5">
+          <h3>??</h3>
+        </b-row>
+        <b-row>
+          <b-col md="6" class="px-0 px-md-3">
+            <home-vision-card/>
+          </b-col>
+          <b-col md="6" class="px-0 px-md-3">
+            <home-membership-card/>
+          </b-col>
+        </b-row>
+      </section>
+
+      <b-row class="py-5">
+        <hr>
+      </b-row>
+
+      <section>       <!-- Our Work Section -->
+        <b-row class="justify-content-center pb-5">
+          <h3>OUR WORK</h3>
+        </b-row>
+        <b-row>
+          <b-col md="4" class="px-0 px-md-3">
+            <home-events-card/>
+          </b-col>
+          <b-col md="4" class="px-0 px-md-3">
+            <home-workshops-card/>
+          </b-col>
+          <b-col md="4" class="px-0 px-md-3">
+            <home-projects-card/>
+          </b-col>
+        </b-row>
+      </section>
+
+      <b-row class="py-5">
+        <hr>
+      </b-row>
+
+      <section>     <!-- Partners Section -->
+        <b-row class="justify-content-center pb-5">
+          <h3>OUR PARTNERS</h3>
+        </b-row>
+        <b-row class="justify-content-center">
+          <home-partners-section/>
+        </b-row>
+      </section>
+
+    </b-container>
   </section>
 </template>
 
 <script>
-import Breif from './Breif.vue'
-import MembershipVision from './MembershipVision.vue'
+import Breif from './HomeCards/Breif.vue'
+import HomeMembershipCard from './HomeCards/MembershipCard.vue'
+import HomeVisionCard from './HomeCards/VisionCard.vue'
+import HomeProjectsCard from './HomeCards/PorjectsCard.vue'
+import HomeEventsCard from './HomeCards/EventsCard.vue'
+import HomeWorkshopsCard from './HomeCards/WorkshopsCard.vue'
+
+import HomePartnersSection from './HomeCards/PartnersSection.vue'
 
 export default {
   name: 'CardsContainer',
   components: { 
     Breif,
-    MembershipVision,
+    HomeMembershipCard,
+    HomeVisionCard,
+    HomeProjectsCard,
+    HomeEventsCard,
+    HomeWorkshopsCard,
+    HomePartnersSection,
   },
 }
 </script>
 
 <style scoped>
 section {
-  background: linear-gradient(rgba(0, 0, 80, 0.4), rgba(0, 0, 80, 0.4)), url("../assets/bg-pattern.png");
-  background-repeat: repeat;
+   background: linear-gradient(rgba(0, 0, 80, 0.4), rgba(0, 0, 80, 0.4)), url("../assets/bg-pattern.png");
+   background-repeat: repeat;
+/*   background: #3f38a8; */
   padding: 0;
   margin: 0;
+  padding-bottom: 5em;
 }
 
 .cards-container {
@@ -34,4 +103,21 @@ section {
   margin-top: 0;
 }
 
+hr { 
+  display: block; 
+  width: 50%;
+  border-width: 5px;
+  background-color: #7d84e7;
+/*   margin-top: 5em */
+}
+
+h3 {
+  color: white;
+}
+
+@media (min-width: 1000px) {
+  .card-shadow {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  }
+}
 </style>

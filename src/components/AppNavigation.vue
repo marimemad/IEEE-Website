@@ -62,6 +62,7 @@ export default {
   width: 100%;
   top: 0;
   z-index: 1;
+  box-shadow: 0 10px 10px -2px rgba(0,0,0,.4);
 }
 .dark-nav {
   background-color: #1a1a2e;

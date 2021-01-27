@@ -1,7 +1,9 @@
 <template>
   <div id="app">
-    <app-navigation :navbarCollapse='navbarCollapse'/>
-    <router-view style="z-index:0"/>
+    <!-- For social media icons as they usually follow copyright laws -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <app-navigation :darkMode="darkMode"/>
+    <router-view :darkMode="darkMode" style="z-index:0"/>
   </div>
 </template>
 
@@ -10,7 +12,7 @@ import AppNavigation from './components/AppNavigation.vue'
 export default {
   data() {
     return {
-      navbarCollapse: "xl"
+      darkMode: false
     }
   },
   components: { 

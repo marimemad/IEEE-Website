@@ -1,6 +1,6 @@
 <template>
   <div class="card-container">
-    <b-card no-body data-aos-once="true" data-aos="flip-down" class="overflow-hidden card">
+    <div data-aos-once="true" data-aos="flip-down" class="overflow-hidden card">
       <b-row no-gutters>
         <b-col md="6" class="img-holder">
             <b-card-img class="round-0" src="https://ieee-zsb.org/images/Sliders/Final1300800.jpg" style="border:none;" alt="Image"></b-card-img>
@@ -14,8 +14,8 @@
           </b-card-body>
         </b-col>
       </b-row>
-    </b-card>
-    <hr>
+    </div>
+<!--     <hr> -->
   </div>
 </template>
 
@@ -31,8 +31,7 @@ export default {
 .card {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 3em;
-  max-width: 1200px;
+/*   max-width: 1200px; */
   border-color: #ffffff;
   background-color: transparent;
   border: none;
@@ -44,24 +43,25 @@ export default {
 }
 .text-card {
   align-self: center;
+  color: white;
 }
 .img-holder {
   display: flex;
   align-items: center;
 }
 
-hr { 
+/* hr { 
   display: block; 
   width: 50%;
   border-width: 5px;
   background-color: #7d84e7;
   margin-top: 5em;
-}
+} */
 
-@media (max-width: 1024px) {
-  hr {
+@media (max-width: 960px) {
+/*   hr {
     margin-top: 3em;
-  }
+  } */
   .card-container {
     margin: 0;
     padding: 0;
