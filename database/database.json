@@ -18,9 +18,11 @@
 
     "committees":{
         "cs":{
-            "about-us":"IEEE Computer Society is a professional society of IEEE. Its purpose and scope is \"to advance the theory, practice, and application of computer and information processing science and technology\" and the \"professional standing of its members\".",
-            "vision":"To be the leading provider of technical information, community services, and personalized services in the field of computer science for all university students as well as other local schools and computer science enthusiasts.",
-            "mission":"To be the leading provider of technical information, community services, and personalized services in the field of computer science for all university students as well as other local schools and computer science enthusiasts.",
+            "about":{
+                "about-us":"IEEE Computer Society is a professional society of IEEE. Its purpose and scope is \"to advance the theory, practice, and application of computer and information processing science and technology\" and the \"professional standing of its members\".",
+                "vision":"To be the leading provider of technical information, community services, and personalized services in the field of computer science for all university students as well as other local schools and computer science enthusiasts.",
+                "mission":"To be the leading provider of technical information, community services, and personalized services in the field of computer science for all university students as well as other local schools and computer science enthusiasts."
+            },
             "team":{
                 "chairman":"member",
                 "vice-chairman":"vice-chairman",
@@ -51,9 +53,11 @@
         },
 
         "ras":{
-            "about-us":"IEEE Computer Society is a professional society of IEEE. Its purpose and scope is \"to advance the theory, practice, and application of computer and information processing science and technology\" and the \"professional standing of its members\".",
-            "vision":"To be the leading provider of technical information, community services, and personalized services in the field of computer science for all university students as well as other local schools and computer science enthusiasts.",
-            "mission":"To be the leading provider of technical information, community services, and personalized services in the field of computer science for all university students as well as other local schools and computer science enthusiasts.",
+            "about":{
+                "about-us":"IEEE Computer Society is a professional society of IEEE. Its purpose and scope is \"to advance the theory, practice, and application of computer and information processing science and technology\" and the \"professional standing of its members\".",
+                "vision":"To be the leading provider of technical information, community services, and personalized services in the field of computer science for all university students as well as other local schools and computer science enthusiasts.",
+                "mission":"To be the leading provider of technical information, community services, and personalized services in the field of computer science for all university students as well as other local schools and computer science enthusiasts."
+            },
             "team":{
                 "chairman":"member",
                 "vice-chairman":"vice-chairman",
