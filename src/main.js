@@ -3,8 +3,12 @@ import App from './App.vue'
 import router from './router'
 import BootstrapVue from 'bootstrap-vue'
 
+import ScrollAnimation from './directives/scrollanimation'
+
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+Vue.directive('scrollanimation', ScrollAnimation);
 
 Vue.use(BootstrapVue)
 

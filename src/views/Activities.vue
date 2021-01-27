@@ -6,19 +6,81 @@
         <h1>Explore what we do</h1>
       </div>
     </div>
-    <b-container id="activity-cards">
-      <b-row v-for="index in Math.ceil(database.length / 3) + 1" :key="index">
-        <b-col sm="12" md="4" v-for="id in 3" :key="id">
-          <Activity
-            class="activity"
-            v-if="getTranslatedId(id, index) < database.length"
-            :title="database[getTranslatedId(id, index)].title"
-            :description="database[getTranslatedId(id, index)].description"
-            :date="database[getTranslatedId(id, index)].date"
-          />
-        </b-col>
-      </b-row>
-    </b-container>
+    <section>
+      <b-container class="activity-section">
+        <h2
+          class="activity-section-heading fade-in"
+          v-scrollanimation
+        >
+          Courses
+        </h2>
+        <div class="activity-cards horizontal-slide" v-scrollanimation>
+          <b-row
+            v-for="index in Math.ceil(coursesData.length / 3) + 1"
+            :key="index"
+          >
+            <b-col sm="12" md="4" v-for="id in 3" :key="id">
+              <Activity
+                class="activity"
+                v-if="getTranslatedId(id, index) < coursesData.length"
+                :title="coursesData[getTranslatedId(id, index)].title"
+                :description="
+                  coursesData[getTranslatedId(id, index)].description
+                "
+                :date="coursesData[getTranslatedId(id, index)].date"
+              />
+            </b-col>
+          </b-row>
+        </div>
+      </b-container>
+    </section>
+    <section>
+      <b-container class="activity-section">
+        <h2 class="activity-section-heading vertical-slide-down" v-scrollanimation>Workshops</h2>
+        <div class="activity-cards vertical-slide-up" v-scrollanimation>
+          <b-row
+            v-for="index in Math.ceil(workshopData.length / 3) + 1"
+            :key="index"
+          >
+            <b-col sm="12" md="4" v-for="id in 3" :key="id">
+              <Activity
+                class="activity"
+                v-if="getTranslatedId(id, index) < workshopData.length"
+                :title="workshopData[getTranslatedId(id, index)].title"
+                :description="
+                  workshopData[getTranslatedId(id, index)].description
+                "
+                :date="workshopData[getTranslatedId(id, index)].date"
+                :backgroundColor="'#eee'"
+              />
+            </b-col>
+          </b-row>
+        </div>
+      </b-container>
+    </section>
+    <section>
+      <b-container class="activity-section">
+        <h2 class="activity-section-heading vertical-slide-down" v-scrollanimation>Projects</h2>
+        <div class="activity-cards horizontal-slide" v-scrollanimation>
+          <b-row
+            v-for="index in Math.ceil(projectsData.length / 3) + 1"
+            :key="index"
+          >
+            <b-col sm="12" md="4" v-for="id in 3" :key="id">
+              <Activity
+                class="activity"
+                v-if="getTranslatedId(id, index) < projectsData.length"
+                :title="projectsData[getTranslatedId(id, index)].title"
+                :description="
+                  projectsData[getTranslatedId(id, index)].description
+                "
+                :date="projectsData[getTranslatedId(id, index)].date"
+              />
+            </b-col>
+          </b-row>
+        </div>
+      </b-container>
+    </section>
   </div>
 </template>
 
@@ -32,12 +94,27 @@ export default {
     Activity,
   },
   data() {
-    var activities = json.activities;
-    for (var i = 0; i < activities.length; i++) {
-      activities[i].id = i;
+    var courses = json.activities.courses;
+    var workshops = json.activities.workshops;
+    var projects = json.activities.projects;
+
+    var i = 0;
+    for (i = 0; i < courses.length; i++) {
+      courses[i].id = i;
     }
+
+    for (i = 0; i < workshops.length; i++) {
+      workshops[i].id = i;
+    }
+
+    for (i = 0; i < projects.length; i++) {
+      projects[i].id = i;
+    }
+
     return {
-      database: activities,
+      coursesData: courses,
+      workshopData: workshops,
+      projectsData: projects,
     };
   },
   methods: {
@@ -57,6 +134,7 @@ export default {
   height: 100vh;
   background-image: url("../assets/activities/background.jpg");
   background-size: cover;
+  box-shadow: 0 7px 3px -3px #888;
 }
 
 #activity-heading {
@@ -71,12 +149,59 @@ export default {
   text-align: center;
 }
 
-#activity-cards {
+.activity-section {
   padding: 50px 0;
-  height: 100vh;
+  min-height: 100vh;
+}
+
+section:nth-child(odd) {
+  background-color: #fff;
+  box-shadow: 0px 2px 2px #888, 0px -2px 2px #888;
+}
+
+.activity-section-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: #009ca6;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 10px;
 }
 
 .activity {
   margin: 15px 0;
+}
+
+/* SCROLL ANIMATIONS */
+.before-enter.horizontal-slide {
+  opacity: 0;
+  transform: translateX(-400px);
+  transition: all 0.5s linear;
+}
+
+.before-enter.vertical-slide-up {
+  opacity: 0;
+  transform: translateY(400px);
+  transition: all 0.3s linear;
+}
+
+.before-enter.vertical-slide-down {
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: all 0.5s linear;
+}
+
+.before-enter.fade-in {
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+
+.enter.horizontal-slide,
+.enter.vertical-slide-up,
+.enter.vertical-slide-down,
+.enter.fade-in {
+  opacity: 1;
+  transform: translateX(0px);
 }
 </style>

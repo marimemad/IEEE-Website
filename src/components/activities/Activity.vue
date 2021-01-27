@@ -35,7 +35,7 @@ export default {
     backgroundStyles(backgroundImage, backgroundColor) {
       return {
         "background-image": `url(${backgroundImage})`,
-        "backgroundColor": `${backgroundColor}`,
+        "background-color": `${backgroundColor}`,
       };
     },
   },
