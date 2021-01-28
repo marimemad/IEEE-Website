@@ -1,6 +1,5 @@
 <template>
   <div class="cs">
-    <b-alert show>Default Alert</b-alert>
     <about-us v-bind:data="data['about']" />
     
   </div>
