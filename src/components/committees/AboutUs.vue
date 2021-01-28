@@ -3,7 +3,7 @@
         <b-container fluid="xl" class="text-center" >
 
             <b-row align-h="center" >
-                <b-col> 
+                <b-col data-aos="fade-up"> 
                     <h3>about us</h3> 
                     <p>{{data['about-us']}}</p>
                 </b-col>
