@@ -23,11 +23,49 @@
                 "vision":"To be the leading provider of technical information, community services, and personalized services in the field of computer science for all university students as well as other local schools and computer science enthusiasts.",
                 "mission":"To be the leading provider of technical information, community services, and personalized services in the field of computer science for all university students as well as other local schools and computer science enthusiasts."
             },
-            "team":{
-                "chairman":"member",
-                "vice-chairman":"vice-chairman",
-                "members":["member", "member", "member", "member", "member", "member"]
-            },
+            "team":[
+                {
+                    "name": "Ahmed Moustafa",
+                    "position": "chairman",
+                    "img":"https://s.mc-doualiya.com/media/display/8681a6aa-b1f0-11e9-842c-005056bf87d6/w:1280/p:16x9/al-sisi.webp"
+                },
+                {
+                    "name": "Samy",
+                    "position": "Member",
+                    "img":"https://www.shorouknews.com/uploadedimages/Sections/Egypt/original/4001014.jpg"
+                },
+                {
+                    "name": "Anwar",
+                    "position": "Member",
+                    "img":"https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Anwar_Wagdi_%28b-w%29.jpg/247px-Anwar_Wagdi_%28b-w%29.jpg"
+                },
+                {
+                    "name": "Khalid",
+                    "position": "Member",
+                    "img":"https://media.filfan.com/NewsPics/FilfanNew/large/320384_0.JPG"
+                },
+                {
+                    "name": "Mahmoud",
+                    "position": "Member",
+                    "img":"https://static.arageek.com/wp-content/uploads/2017/09/Amr-Diab-2.jpg"
+                },
+                {
+                    "name": "Marim",
+                    "position": "Member",
+                    "img":"https://1.bp.blogspot.com/-Kulm3mFVgbA/Xc5gpetuU9I/AAAAAAAAAeQ/65ODZ2npaUcGLoMbz-ooTmb_RfwV8oqPACNcBGAsYHQ/s1600/D_tRvQQXsAIjhRy.jpg"
+                },
+                {
+                    "name": "Ferial",
+                    "position": "Member",
+                    "img":"https://1.bp.blogspot.com/-4DKUGAm9cDk/Xc5gowH7GnI/AAAAAAAAAeM/eWt54fWRq6ki52LKh9lXA6ojy_aOiE6-ACNcBGAsYHQ/s1600/D_tbnYUW4AAtag6.jpg"
+                },
+                {
+                    "name": "Member",
+                    "position": "Member",
+                    "img":"https://placekitten.com/300/300"
+                }
+                
+            ],
             "tracks":[
                 {
                     "name":"track",
