@@ -5,7 +5,7 @@
       <router-link to="/cs-committee">CS</router-link> |
       <router-link to="/ras-committee">RAS</router-link> |
       <router-link to="/activities">Activities</router-link> |
-
+      <router-link to="/contact-us">Contact Us</router-link> |
     </div>
     <router-view/>
   </div>
