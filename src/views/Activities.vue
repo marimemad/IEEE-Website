@@ -3,18 +3,20 @@
     <!-- TODO Add navbar component -->
     <div id="activity-landing">
       <div id="activity-heading">
-        <h1>Explore what we do</h1>
+        <h1 data-aos="fade-up" data-aos-duration="4000" data-aos-offset="200" data-aos-easing="linear">
+          Explore what we do
+        </h1>
       </div>
     </div>
     <section>
       <b-container class="activity-section">
-        <h2
-          class="activity-section-heading fade-in"
-          v-scrollanimation
+        <h2 class="activity-section-heading" data-aos="fade-in">Courses</h2>
+        <div
+          class="activity-cards"
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-duration="300"
         >
-          Courses
-        </h2>
-        <div class="activity-cards horizontal-slide" v-scrollanimation>
           <b-row
             v-for="index in Math.ceil(coursesData.length / 3) + 1"
             :key="index"
@@ -36,8 +38,8 @@
     </section>
     <section>
       <b-container class="activity-section">
-        <h2 class="activity-section-heading vertical-slide-down" v-scrollanimation>Workshops</h2>
-        <div class="activity-cards vertical-slide-up" v-scrollanimation>
+        <h2 class="activity-section-heading" data-aos="fade-down">Workshops</h2>
+        <div class="activity-cards" data-aos="flip-right" data-aos-duration="800">
           <b-row
             v-for="index in Math.ceil(workshopData.length / 3) + 1"
             :key="index"
@@ -60,8 +62,13 @@
     </section>
     <section>
       <b-container class="activity-section">
-        <h2 class="activity-section-heading vertical-slide-down" v-scrollanimation>Projects</h2>
-        <div class="activity-cards horizontal-slide" v-scrollanimation>
+        <h2
+          class="activity-section-heading"
+          data-aos="fade-right"
+        >
+          Projects
+        </h2>
+        <div class="activity-cards" data-aos="zoom-in-up">
           <b-row
             v-for="index in Math.ceil(projectsData.length / 3) + 1"
             :key="index"
