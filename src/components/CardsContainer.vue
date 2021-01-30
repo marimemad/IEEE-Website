@@ -1,6 +1,7 @@
 <template>
-  <section>
-    <b-container mx="0">
+  <section class="cards-section"> 
+ <!-- Use cards-section to change background, I used section element cause it looks more elegent not matching background img--> 
+   <b-container class="cards-container" mx="0">
       <section>     <!-- ABOUT IEEE -->
         <b-row>
           <breif/>
@@ -71,7 +72,7 @@ import HomeProjectsCard from './HomeCards/PorjectsCard.vue'
 import HomeEventsCard from './HomeCards/EventsCard.vue'
 import HomeWorkshopsCard from './HomeCards/WorkshopsCard.vue'
 
-import HomePartnersSection from './HomeCards/PartnersSection.vue'
+import HomePartnersSection from './PartnersSection.vue'
 
 export default {
   name: 'CardsContainer',
@@ -98,9 +99,9 @@ section {
 }
 
 .cards-container {
-  max-width: 1200px;
   margin: auto;
   margin-top: 0;
+  max-width: 1200px;
 }
 
 hr { 

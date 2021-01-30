@@ -1,5 +1,5 @@
 <template>
-<div class="card card-shadow" data-aos-delay="500" data-aos-once="true" data-aos="flip-right">
+<div class="card card-shadow" data-aos-once="true" data-aos="fade-down">
   <img class="card-img-top card-img" src="@/assets/white_workshops.svg" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">Workshops</h5>

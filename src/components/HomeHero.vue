@@ -21,7 +21,7 @@ export default {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/blurred-hero-bg-opt.jpg');
   background-size: cover;
   width: 100%;
-  height: 95vh;
+  height: 90vh;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;

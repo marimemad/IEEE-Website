@@ -1,5 +1,5 @@
 <template>
-<div data-aos-delay="500" data-aos-once="true" data-aos="fade-in">
+<div data-aos-once="true" data-aos="fade-in">
   <img class="card-img-top card-img" src="@/assets/white_membership.svg" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">Membership Benfits</h5>
@@ -25,5 +25,10 @@ export default {
   .card-body {
     background-color: white;
     text-align: center;
+  }
+  @media (min-width: 1024px) {
+    .card-body {
+      border-radius: 2px;
+    }
   }
 </style>

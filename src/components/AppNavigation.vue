@@ -1,20 +1,21 @@
 <template>
   <section class="navigation">
-    <b-navbar toggleable="xl" class="dark-nav" type="dark" >
-      <b-navbar-brand to="/">IEEE ZSB <!-- ADD SVG LOGO --></b-navbar-brand>
+    <!-- NOTICE when changing toggleable you will have to change number of pixels below for animation -->
+    <b-navbar toggleable="lg" class="dark-nav" type="dark" >
+      <b-navbar-brand class="text" to="/">IEEE ZSB <!-- ADD SVG LOGO --></b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" type="dark" is-nav>
         <b-navbar-nav fixed>
-          <b-nav-item class="hover-underline" to="/"><a>Home</a></b-nav-item>
-          <b-nav-item class="hover-underline" to="/about"><a>About Us</a></b-nav-item>
-          <b-nav-item class="hover-underline" to="/about">Events</b-nav-item>
-          <b-nav-item class="hover-underline" to="/about">Activities</b-nav-item>
-          <b-nav-item class="hover-underline" to="/about">Membership</b-nav-item>
-          <b-nav-item class="hover-underline" to="/about">FAQ</b-nav-item>
-          <b-nav-item class="hover-underline" to="/about">Committees</b-nav-item>
-          <b-nav-item class="hover-underline" to="/about">Contact</b-nav-item>
+<!--           <b-nav-item class="hover-underline" to="/"><a>Home</a></b-nav-item> -->
+          <b-nav-item class="text hover-underline" to="/about">Events</b-nav-item>
+          <b-nav-item class="text hover-underline" to="/about">Activities</b-nav-item>
+          <b-nav-item class="text hover-underline" to="/about">Membership</b-nav-item>
+<!--           <b-nav-item class="text hover-underline" to="/about">FAQ</b-nav-item> -->
+          <b-nav-item class="text hover-underline" to="/about">Committees</b-nav-item>
+          <b-nav-item class="text hover-underline" to="/about"><a>About Us</a></b-nav-item>
+<!--           <b-nav-item class="text hover-underline" to="/about">Contact</b-nav-item> -->
         </b-navbar-nav>
 
         <b-navbar-nav class="ml-auto">
@@ -38,7 +39,7 @@ export default {
   data() {
     return {
       lang: "EN",
-      navbarCollapse: "xl"
+      navbarCollapse: 800,
     }
   },
   props: {
@@ -58,7 +59,7 @@ export default {
 
 <style scoped>
 .navigation {
-  position: fixed;
+  position: sticky;
   width: 100%;
   top: 0;
   z-index: 1;
@@ -68,31 +69,33 @@ export default {
   background-color: #1a1a2e;
 }
 
-.white-text {
-  color: white;
+.text {
+  font-weight: normal;
 }
 
-.hover-underline {
-  text-transform: uppercase;
-  text-decoration: none;
-  display: inline-block;
-  position: relative;
-}
+@media (min-width: 992px) {
+  .hover-underline {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+  }
 
-.hover-underline:after {    
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 45%;
-  position: absolute;
-  background: #fff;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-.hover-underline:hover:after { 
-  width: 90%; 
-  left: 5%;
+  .hover-underline:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 45%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .hover-underline:hover:after { 
+    width: 90%; 
+    left: 5%;
+  }
 }
 </style>

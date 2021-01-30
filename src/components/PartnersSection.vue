@@ -10,7 +10,7 @@
         </b-col>
       </b-row>
     </b-container> -->
-    <div class="partners-container">
+    <div data-aos="zoom-in-up" data-aos-once="true" class="partners-container">
       <div class="partner" v-for="(partner, index) in Partners" :key="index">
         <a :href="partner.websiteLink">
           <img :src="partner.imgLink" :alt="partner.name" style="max-width:110px;">

@@ -14,6 +14,16 @@
           <div class="follow-us">
             <h3>FOLLOW US</h3>
             <div class="follow-links">
+              <span class="link">
+                <a href="https://www.facebook.com/IEEE.CS.ZSC/">
+                  <b-icon-facebook/>
+                </a>
+              </span>
+              <span class="link">
+                <a href="https://www.linkedin.com/company/ieee-cs-zagazig-student-chapter/about/">
+                  <b-icon-linkedin/>
+                </a>
+              </span>
             </div>
           </div>
         </b-col>
@@ -34,5 +44,13 @@ footer {
   background-color: #1a1a2e;
   padding: 2em;
   color: white;
+}
+
+.link {
+  padding-right: 10px;
+  font-size: 2em;
+}
+.link:hover {
+  opacity: 0.7;
 }
 </style>
