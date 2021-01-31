@@ -9,6 +9,7 @@ import ContactUs from '../views/ContactUs.vue'
 import MemberShip from '../views/MemberShip.vue'
 import FrequentlyAskedQuestions from '../views/FrequentlyAskedQuestions.vue'
 import About from '../views/About.vue'
+import event from '../views/Event.vue'
 
 Vue.use(VueRouter)
 
@@ -53,6 +54,11 @@ const routes = [
     name: 'FrequentlyAskedQuestions',
     component: FrequentlyAskedQuestions
   },
+  {
+    path:'/event',
+    name: 'event',
+    component:event
+  }
 ]
 
 const router = new VueRouter({

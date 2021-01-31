@@ -14,6 +14,7 @@
           <b-nav-item class="text hover-underline" to="/ras-committee">RAS</b-nav-item>
           <b-nav-item class="text hover-underline" to="/FAQ">FAQ</b-nav-item>
           <b-nav-item class="text hover-underline" to="/contact-us"><a>Contact Us</a></b-nav-item>
+          <b-nav-item class="text hover-underline" to="/event"><a>Event</a></b-nav-item>
           <!-- tbh about page isn't needed-->
 <!--           <b-nav-item class="text hover-underline" to="/about"><a>About Us</a></b-nav-item> -->
         </b-navbar-nav>
