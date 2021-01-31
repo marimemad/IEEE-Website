@@ -4,23 +4,11 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import CS from '../views/CS.vue'
 import RAS from '../views/RAS.vue'
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 import Activities from '../views/Activities.vue'
 import ContactUs from '../views/ContactUs.vue'
-=======
 import MemberShip from '../views/MemberShip.vue'
 import FrequentlyAskedQuestions from '../views/FrequentlyAskedQuestions.vue'
->>>>>>> Stashed changes
-=======
-import MemberShip from '../views/MemberShip.vue'
-import FrequentlyAskedQuestions from '../views/FrequentlyAskedQuestions.vue'
->>>>>>> Stashed changes
-=======
-import MemberShip from '../views/MemberShip.vue'
-import FrequentlyAskedQuestions from '../views/FrequentlyAskedQuestions.vue'
->>>>>>> Stashed changes
+import About from '../views/About.vue'
 
 Vue.use(VueRouter)
 
@@ -29,6 +17,11 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/about',
+    name: 'About',
+    component: About,
   },
   {
     path: '/cs-committee',
@@ -41,9 +34,6 @@ const routes = [
     component: RAS
   },
   {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
     path: '/activities',
     name: 'Activities',
     component: Activities
@@ -53,12 +43,7 @@ const routes = [
     name: 'Contact Us',
     component: ContactUs
   },
-  
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+  {
     path: '/member-ship',
     name: 'MemberShip',
     component: MemberShip
@@ -68,20 +53,12 @@ const routes = [
     name: 'FrequentlyAskedQuestions',
     component: FrequentlyAskedQuestions
   },
-
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 ]
 
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
-  routes
+  routes: routes,
 })
 
 export default router

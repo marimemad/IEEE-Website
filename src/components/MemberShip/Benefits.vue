@@ -1,4 +1,3 @@
-
 <template>
   <div class="Benefits">
     <!--beginning of the page -->

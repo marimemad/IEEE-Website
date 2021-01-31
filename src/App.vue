@@ -1,36 +1,43 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/cs-committee">CS</router-link> |
-      <router-link to="/ras-committee">RAS</router-link> |
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      <router-link to="/activities">Activities</router-link> |
-      <router-link to="/contact-us">Contact Us</router-link> |
-=======
-      <router-link to="/member-ship">Member Ship</router-link> |
-      <router-link to="/FAQ">FAQ</router-link> |
->>>>>>> Stashed changes
-=======
-      <router-link to="/member-ship">Member Ship</router-link> |
-      <router-link to="/FAQ">FAQ</router-link> |
->>>>>>> Stashed changes
-=======
-      <router-link to="/member-ship">Member Ship</router-link> |
-      <router-link to="/FAQ">FAQ</router-link> |
->>>>>>> Stashed changes
-    </div>
-    <router-view/>
-
+    <!-- For social media icons as they usually follow copyright laws -->
+    <app-navigation/>
+    <transition
+      name="fade"
+      mode="out-in">
+      <router-view style="z-index:0"></router-view>
+    </transition>
   </div>
 </template>
 
+<script>
+import AppNavigation from './components/AppNavigation.vue'
+export default {
+  components: { 
+    AppNavigation
+   },
+}
+</script>
+
 <style>
-    html, body {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
+#app {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition-duration: 0.3s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0
+}
 </style>

@@ -1,40 +1,30 @@
+import Vue from 'vue'
+import App from './App.vue'
+import  {BootstrapVue, BootstrapVueIcons} from 'bootstrap-vue'
+import VueRouter from 'vue-router'
+import router from './router'
+import AOS from 'aos';
+
 import '@babel/polyfill'
 import 'mutationobserver-shim'
-import Vue from 'vue'
 import './plugins/bootstrap-vue'
-import App from './App.vue'
-import router from './router'
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-import AOS from 'aos';
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'aos/dist/aos.css';
 
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 import "bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
-import  {BootstrapVue, BootstrapVueIcons} from 'bootstrap-vue'
 
 
 Vue.use(BootstrapVue)
 Vue.use(BootstrapVueIcons)
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+Vue.use(VueRouter)
 
 Vue.config.productionTip = false
 
 new Vue({
-  created(){
-    AOS.init();
+  created() {
+    AOS.init({delay: 300});
   },
   router,
   render: h => h(App)
