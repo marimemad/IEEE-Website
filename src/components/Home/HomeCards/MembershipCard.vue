@@ -1,6 +1,6 @@
 <template>
-<div data-aos-once="true" data-aos="fade-in">
-  <img class="card-img-top card-img" src="@/assets/white_membership.svg" alt="Card image cap">
+<div class="my-card" data-aos-once="true" data-aos="fade-in">
+    <b-icon-person-check-fill class="img-top"/>
     <div class="card-body">
       <h5 class="card-title">Membership Benfits</h5>
       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -10,16 +10,21 @@
 
 <script>
 export default {
-  name: "HomeVisionCard"
+  name: "MembershipCard"
 }
 </script>
 
 <style scoped>
-  .card-img-top {
-    max-height: 200px;
+  .my-card {
+    display: flex;
+    flex-direction: column;
   }
-  .card {
-    background-color: transparent;
+  .img-top {
+    max-height: 200px;
+    height: 200px;
+    fill: white;
+    width: auto;
+    align-self: center;
   }
   
   .card-body {

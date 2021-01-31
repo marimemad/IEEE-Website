@@ -1,15 +1,4 @@
 <template>
-<!--     <b-container>
-      <b-row class="justify-content-center">
-        <b-col v-for="(partner, index) in Partners" :key="index">
-          <div class="partner-card" style="padding: 0.5em; max-width: 120px">
-            <a :href="partner.websiteLink">
-              <img :src="partner.imgLink" :alt="partner.name" style="max-width:100px;">
-            </a>
-          </div>
-        </b-col>
-      </b-row>
-    </b-container> -->
     <div data-aos="zoom-in-up" data-aos-once="true" class="partners-container">
       <div class="partner" v-for="(partner, index) in Partners" :key="index">
         <a :href="partner.websiteLink">

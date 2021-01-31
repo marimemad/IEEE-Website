@@ -1,10 +1,11 @@
 <template>
+<!-- This container after Hero to Footer (Footer excluded) -->
   <section class="cards-section"> 
  <!-- Use cards-section to change background, I used section element cause it looks more elegent not matching background img--> 
    <b-container class="cards-container" mx="0">
       <section>     <!-- ABOUT IEEE -->
         <b-row>
-          <breif/>
+          <IEEEBreif/>
         </b-row>
       </section>
 
@@ -18,7 +19,7 @@
         </b-row>
         <b-row>
           <b-col md="6" class="px-0 px-md-3">
-            <home-vision-card/>
+            <home-vision-card :data="visionData"/>
           </b-col>
           <b-col md="6" class="px-0 px-md-3">
             <home-membership-card/>
@@ -65,34 +66,35 @@
 </template>
 
 <script>
-import Breif from './HomeCards/Breif.vue'
+import IEEEBreif from './HomeCards/IEEEBreif.vue'
 import HomeMembershipCard from './HomeCards/MembershipCard.vue'
 import HomeVisionCard from './HomeCards/VisionCard.vue'
 import HomeProjectsCard from './HomeCards/PorjectsCard.vue'
 import HomeEventsCard from './HomeCards/EventsCard.vue'
 import HomeWorkshopsCard from './HomeCards/WorkshopsCard.vue'
-
 import HomePartnersSection from './PartnersSection.vue'
 
 export default {
-  name: 'CardsContainer',
+  name: 'HomeContentContainer',
   components: { 
-    Breif,
     HomeMembershipCard,
     HomeVisionCard,
     HomeProjectsCard,
     HomeEventsCard,
     HomeWorkshopsCard,
     HomePartnersSection,
+    IEEEBreif,
   },
+  props: {
+    visionData: String,
+  }
 }
 </script>
 
 <style scoped>
 section {
-   background: linear-gradient(rgba(0, 0, 80, 0.4), rgba(0, 0, 80, 0.4)), url("../assets/bg-pattern.png");
-   background-repeat: repeat;
-/*   background: #3f38a8; */
+  background: linear-gradient(rgba(0, 0, 80, 0.4), rgba(0, 0, 80, 0.4)), url("../../assets/bg-pattern.png");
+  background-repeat: repeat;
   padding: 0;
   margin: 0;
   padding-bottom: 5em;
@@ -109,7 +111,6 @@ hr {
   width: 50%;
   border-width: 5px;
   background-color: #7d84e7;
-/*   margin-top: 5em */
 }
 
 h3 {

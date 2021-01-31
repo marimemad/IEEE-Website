@@ -18,7 +18,7 @@ export default {
 
 <style scoped>
 .hero-image {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/blurred-hero-bg-opt.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../assets/blurred-hero-bg-opt.jpg");
   background-size: cover;
   width: 100%;
   height: 90vh;

@@ -2,20 +2,17 @@
   <section class="navigation">
     <!-- NOTICE when changing toggleable you will have to change number of pixels below for animation -->
     <b-navbar toggleable="lg" class="dark-nav" type="dark" >
-      <b-navbar-brand class="text" to="/">IEEE ZSB <!-- ADD SVG LOGO --></b-navbar-brand>
+      <b-navbar-brand tabindex="0" class="text" to="/">IEEE ZSB <!-- ADD SVG LOGO --></b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" type="dark" is-nav>
         <b-navbar-nav fixed>
-<!--           <b-nav-item class="hover-underline" to="/"><a>Home</a></b-nav-item> -->
           <b-nav-item class="text hover-underline" to="/about">Events</b-nav-item>
           <b-nav-item class="text hover-underline" to="/about">Activities</b-nav-item>
           <b-nav-item class="text hover-underline" to="/about">Membership</b-nav-item>
-<!--           <b-nav-item class="text hover-underline" to="/about">FAQ</b-nav-item> -->
           <b-nav-item class="text hover-underline" to="/about">Committees</b-nav-item>
           <b-nav-item class="text hover-underline" to="/about"><a>About Us</a></b-nav-item>
-<!--           <b-nav-item class="text hover-underline" to="/about">Contact</b-nav-item> -->
         </b-navbar-nav>
 
         <b-navbar-nav class="ml-auto">
