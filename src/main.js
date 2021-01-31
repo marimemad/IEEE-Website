@@ -1,19 +1,26 @@
 import Vue from 'vue'
 import App from './App.vue'
-import { BootstrapVue} from 'bootstrap-vue'
-import { BootstrapVueIcons } from 'bootstrap-vue'
+import  {BootstrapVue, BootstrapVueIcons} from 'bootstrap-vue'
 import VueRouter from 'vue-router'
-import AOS from 'aos'
+import router from './router'
+import AOS from 'aos';
 
+import '@babel/polyfill'
+import 'mutationobserver-shim'
+import './plugins/bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
-import router from './router'
-import 'aos/dist/aos.css'
+import 'aos/dist/aos.css';
 
-Vue.config.productionTip = false
+import "bootstrap"
+import "bootstrap/dist/css/bootstrap.min.css"
+
+
 Vue.use(BootstrapVue)
 Vue.use(BootstrapVueIcons)
 Vue.use(VueRouter)
+
+Vue.config.productionTip = false
 
 new Vue({
   created() {

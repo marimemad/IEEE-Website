@@ -8,11 +8,14 @@
 
       <b-collapse id="nav-collapse" type="dark" is-nav>
         <b-navbar-nav fixed>
-          <b-nav-item class="text hover-underline" to="/about">Events</b-nav-item>
-          <b-nav-item class="text hover-underline" to="/about">Activities</b-nav-item>
-          <b-nav-item class="text hover-underline" to="/about">Membership</b-nav-item>
-          <b-nav-item class="text hover-underline" to="/about">Committees</b-nav-item>
-          <b-nav-item class="text hover-underline" to="/about"><a>About Us</a></b-nav-item>
+          <b-nav-item class="text hover-underline" to="/activities">Activities</b-nav-item>
+          <b-nav-item class="text hover-underline" to="/member-ship">Membership</b-nav-item>
+          <b-nav-item class="text hover-underline" to="/cs-committee">CS</b-nav-item>
+          <b-nav-item class="text hover-underline" to="/ras-committee">RAS</b-nav-item>
+          <b-nav-item class="text hover-underline" to="/FAQ">FAQ</b-nav-item>
+          <b-nav-item class="text hover-underline" to="/contact-us"><a>Contact Us</a></b-nav-item>
+          <!-- tbh about page isn't needed-->
+<!--           <b-nav-item class="text hover-underline" to="/about"><a>About Us</a></b-nav-item> -->
         </b-navbar-nav>
 
         <b-navbar-nav class="ml-auto">
@@ -93,6 +96,19 @@ export default {
   .hover-underline:hover:after { 
     width: 90%; 
     left: 5%;
+  }
+
+  .hover-underline > .router-link-active:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 5%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 90%;
   }
 }
 </style>

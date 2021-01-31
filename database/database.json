@@ -1,0 +1,211 @@
+{
+    "home": {
+        "logo": "",
+        "carousel-imgs": [],
+        "board": {
+            "chairman": "chairman",
+            "vice-chairman": "vice-chairman",
+            "secretary": "secretary",
+            "treasury": "treasury"
+        }
+    },
+
+
+    "events":{
+
+    },
+
+
+    "committees":{
+        "cs":{
+            "about":{
+                "about-us":"IEEE Computer Society is a professional society of IEEE. Its purpose and scope is \"to advance the theory, practice, and application of computer and information processing science and technology\" and the \"professional standing of its members\".",
+                "vision":"To be the leading provider of technical information, community services, and personalized services in the field of computer science for all university students as well as other local schools and computer science enthusiasts.",
+                "mission":"To be the leading provider of technical information, community services, and personalized services in the field of computer science for all university students as well as other local schools and computer science enthusiasts."
+            },
+            "team":[
+                {
+                    "name": "Ahmed Moustafa",
+                    "position": "chairman",
+                    "img":"https://s.mc-doualiya.com/media/display/8681a6aa-b1f0-11e9-842c-005056bf87d6/w:1280/p:16x9/al-sisi.webp"
+                },
+                {
+                    "name": "Samy",
+                    "position": "Member",
+                    "img":"https://www.shorouknews.com/uploadedimages/Sections/Egypt/original/4001014.jpg"
+                },
+                {
+                    "name": "Anwar",
+                    "position": "Member",
+                    "img":"https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Anwar_Wagdi_%28b-w%29.jpg/247px-Anwar_Wagdi_%28b-w%29.jpg"
+                },
+                {
+                    "name": "Khalid",
+                    "position": "Member",
+                    "img":"https://media.filfan.com/NewsPics/FilfanNew/large/320384_0.JPG"
+                },
+                {
+                    "name": "Mahmoud",
+                    "position": "Member",
+                    "img":"https://static.arageek.com/wp-content/uploads/2017/09/Amr-Diab-2.jpg"
+                },
+                {
+                    "name": "Marim",
+                    "position": "Member",
+                    "img":"https://1.bp.blogspot.com/-Kulm3mFVgbA/Xc5gpetuU9I/AAAAAAAAAeQ/65ODZ2npaUcGLoMbz-ooTmb_RfwV8oqPACNcBGAsYHQ/s1600/D_tRvQQXsAIjhRy.jpg"
+                },
+                {
+                    "name": "Ferial",
+                    "position": "Member",
+                    "img":"https://1.bp.blogspot.com/-4DKUGAm9cDk/Xc5gowH7GnI/AAAAAAAAAeM/eWt54fWRq6ki52LKh9lXA6ojy_aOiE6-ACNcBGAsYHQ/s1600/D_tbnYUW4AAtag6.jpg"
+                },
+                {
+                    "name": "Member",
+                    "position": "Member",
+                    "img":"https://placekitten.com/300/300"
+                }
+                
+            ],
+            "tracks":[
+                {
+                    "name": "track",
+                    "img": "",
+                    "description": ""
+                },
+                {
+                    "name": "track",
+                    "img": "",
+                    "description": ""
+                },
+                {
+                    "name": "track",
+                    "img": "",
+                    "description": ""
+                }
+            ],
+            "contact-us":{
+                "address":"Zagazig University",
+                "email":"cs@ieee-zsb.org",
+                "linkedin":"https://www.linkedin.com/company/ieee-cs-zagazig-student-chapter/about/",
+                "facebook":"https://www.facebook.com/IEEE.CS.ZSC/"
+            }
+        },
+
+        "ras":{
+            "about":{
+                "about-us":"IEEE Computer Society is a professional society of IEEE. Its purpose and scope is \"to advance the theory, practice, and application of computer and information processing science and technology\" and the \"professional standing of its members\".",
+                "vision":"To be the leading provider of technical information, community services, and personalized services in the field of computer science for all university students as well as other local schools and computer science enthusiasts.",
+                "mission":"To be the leading provider of technical information, community services, and personalized services in the field of computer science for all university students as well as other local schools and computer science enthusiasts."
+            },
+            "team":{
+                "chairman":"member",
+                "vice-chairman":"vice-chairman",
+                "members":["member", "member", "member", "member", "member", "member"]
+            },
+            "tracks": [
+                {
+                    "name": "track",
+                    "img": "",
+                    "description": ""
+                },
+                {
+                    "name": "track",
+                    "img": "",
+                    "description": ""
+                },
+                {
+                    "name": "track",
+                    "img": "",
+                    "description": ""
+                }
+            ],
+            "contact-us": {
+                "email": "cs@ieee-zsb.org",
+                "linkedin": "https://www.linkedin.com/company/ieee-cs-zagazig-student-chapter/about/",
+                "facebook": "https://www.facebook.com/IEEE.CS.ZSC/"
+            }
+        }
+    },
+    "activities": {
+        "courses": [
+            {
+                "title": "Course 1",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur accusantium sit vitae est ex repudiandae odio? Vero, iusto? Facilis tempore vel minus et ipsa fugiat? Quisquam fuga architecto harum.",
+                "date": "XX/XX/2021"
+            },
+            {
+                "title": "Course 2",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur accusantium sit vitae est ex repudiandae odio? Vero, iusto? Facilis tempore vel minus et ipsa fugiat? Quisquam fuga architecto harum.",
+                "date": "XX/XX/2021"
+            },
+            {
+                "title": "Course 3",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur accusantium sit vitae est ex repudiandae odio? Vero, iusto? Facilis tempore vel minus et ipsa fugiat? Quisquam fuga architecto harum.",
+                "date": "XX/XX/2021"
+            },
+            {
+                "title": "Course 4",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur accusantium sit vitae est ex repudiandae odio? Vero, iusto? Facilis tempore vel minus et ipsa fugiat? Quisquam fuga architecto harum.",
+                "date": "XX/XX/2021"
+            }
+        ],
+        "workshops": [
+            {
+                "title": "Workshop 1",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur accusantium sit vitae est ex repudiandae odio? Vero, iusto? Facilis tempore vel minus et ipsa fugiat? Quisquam fuga architecto harum.",
+                "date": "XX/XX/2021"
+            },
+            {
+                "title": "Workshop 2",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur accusantium sit vitae est ex repudiandae odio? Vero, iusto? Facilis tempore vel minus et ipsa fugiat? Quisquam fuga architecto harum.",
+                "date": "XX/XX/2021"
+            },
+            {
+                "title": "Workshop 3",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur accusantium sit vitae est ex repudiandae odio? Vero, iusto? Facilis tempore vel minus et ipsa fugiat? Quisquam fuga architecto harum.",
+                "date": "XX/XX/2021"
+            },
+            {
+                "title": "Workshop 4",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur accusantium sit vitae est ex repudiandae odio? Vero, iusto? Facilis tempore vel minus et ipsa fugiat? Quisquam fuga architecto harum.",
+                "date": "XX/XX/2021"
+            }
+        ],
+        "projects": [
+            {
+                "title": "Project 1",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur accusantium sit vitae est ex repudiandae odio? Vero, iusto? Facilis tempore vel minus et ipsa fugiat? Quisquam fuga architecto harum.",
+                "date": "XX/XX/2021"
+            },
+            {
+                "title": "Project 2",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur accusantium sit vitae est ex repudiandae odio? Vero, iusto? Facilis tempore vel minus et ipsa fugiat? Quisquam fuga architecto harum.",
+                "date": "XX/XX/2021"
+            },
+            {
+                "title": "Project 3",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur accusantium sit vitae est ex repudiandae odio? Vero, iusto? Facilis tempore vel minus et ipsa fugiat? Quisquam fuga architecto harum.",
+                "date": "XX/XX/2021"
+            },
+            {
+                "title": "Project 4",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur accusantium sit vitae est ex repudiandae odio? Vero, iusto? Facilis tempore vel minus et ipsa fugiat? Quisquam fuga architecto harum.",
+                "date": "XX/XX/2021"
+            }
+        ]
+    },
+    "membership": {},
+    "faq": [
+        {
+            "question": "answer"
+        },
+        {
+            "question": "answer"
+        },
+        {
+            "question": "answer"
+        }
+    ],
+    "about-us": {},
+    "contact-us": {}
+}
