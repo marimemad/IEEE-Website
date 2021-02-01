@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <appheader :logo="logo"/>
+    <!-- <appheader :logo="logo"/> -->
     <slider :src="src" />
     <about :about="about" :name="eventname" :place="where" :dates="when" :vision="vision" :mission="mission" :goals="goals" 
     :session="sessions" :workshop="workshop" :casestudy="caseStudy" />
@@ -15,7 +15,7 @@
 
 <script>
 import slider from "../components/events/slider";
-import appheader from "../components/events/Appheader";
+// import appheader from "../components/events/Appheader";
 import about from "../components/events/About";
 import speakers from "../components/events/speakers";
 import partners from "../components/events/partners";
@@ -25,7 +25,7 @@ import data from "../../database/database.json";
 export default {
   name: 'event',
   components:{
-   appheader,
+  //  appheader,
    slider,
    about,
    speakers,
