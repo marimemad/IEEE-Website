@@ -54,6 +54,24 @@
 
     "committees":{
         "cs":{
+            "carousel":[
+                {
+                    "caption":"First slide",
+                    "text":"Nulla vitae elit libero, a pharetra augue mollis interdum.",
+                    "img":"https://picsum.photos/1024/480/?image=50"
+                },
+                {
+                    "caption":"Second slide",
+                    "text":"Nulla vitae elit libero, a pharetra augue mollis interdum.",
+                    "img":"https://picsum.photos/1024/480/?image=51"
+                },
+                {
+                    "caption":"Third slide",
+                    "text":"Nulla vitae elit libero, a pharetra augue mollis interdum.",
+                    "img":"https://picsum.photos/1024/480/?image=52"
+                }
+                
+            ],
             "about":{
                 "about-us":"IEEE Computer Society is a professional society of IEEE. Its purpose and scope is \"to advance the theory, practice, and application of computer and information processing science and technology\" and the \"professional standing of its members\".",
                 "vision":"To be the leading provider of technical information, community services, and personalized services in the field of computer science for all university students as well as other local schools and computer science enthusiasts.",
