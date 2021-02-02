@@ -18,6 +18,7 @@
                 v-for="(item, index) in carousel"
                 :key="index"
                 :caption="item.caption"
+                :text="item.text"
                 :img-src="item.img"
             ></b-carousel-slide>
 
