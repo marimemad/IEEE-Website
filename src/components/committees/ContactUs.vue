@@ -42,7 +42,7 @@
                     </b-col>
                 </b-row>
 
-                <b-button data-aos="fade-up" data-aos-duration="3000" class="mb-2" type="submit" variant="primary">Submit</b-button>
+                <b-button data-aos="zoom-in" data-aos-duration="3000" class="mb-2" type="submit" variant="primary">Submit</b-button>
 
             </b-form>       
         </b-container>

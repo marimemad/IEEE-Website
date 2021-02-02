@@ -48,6 +48,8 @@ export default {
 </script>
 
 <style scoped>
-
+.carousel{
+  z-index: 0;
+}
 
 </style>
