@@ -1,7 +1,7 @@
 <template>
   <div class="card-container">
-    <div data-aos-once="true" data-aos="flip-down" class="overflow-hidden card">
-      <b-row no-gutters>
+    <div  class="overflow-hidden card">
+      <b-row data-aos-once="true" data-aos="flip-down" no-gutters>
         <b-col md="6" class="img-holder">
             <b-card-img class="round-0" :src="imgLink" style="border:none;" :alt="imgAlt"></b-card-img>
         </b-col>
@@ -61,8 +61,7 @@ export default {
     .card-container {
       margin: 0;
       padding: 0;
-      min-width: 100%;
-      padding-bottom: 2em;
+      width: 100%;
     }
     .card {
       border-style: none;

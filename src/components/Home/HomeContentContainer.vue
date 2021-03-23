@@ -1,37 +1,41 @@
 <template>
-<!-- This container after Hero to Footer (Footer excluded) -->
+<!-- This container extend from Hero to Footer (Footer excluded) -->
   <section class="cards-section"> 
  <!-- Use cards-section to change background, I used section element cause it looks more elegent not matching background img--> 
-   <b-container class="cards-container" mx="0">
-      <section>     <!-- ABOUT IEEE -->
+   <b-container fluid class="cards-container" mx="0">
+
+        <!-- ABOUT IEEE -->
+<!--       <section> -->
         <b-row>
           <IEEEBreif/>
         </b-row>
-      </section>
+<!--       </section> -->
 
       <b-row class="py-5">
         <hr>
       </b-row>
 
-      <section>     <!-- ?? -->
+      <!-- ?? -->
+<!--       <section>      -->
         <b-row class="justify-content-center pb-5">
           <h3>??</h3>
         </b-row>
         <b-row>
           <b-col md="6" class="px-0 px-md-3">
-            <home-vision-card :data="visionData"/>
+            <home-vision-card/>
           </b-col>
           <b-col md="6" class="px-0 px-md-3">
             <home-membership-card/>
           </b-col>
         </b-row>
-      </section>
+<!--       </section> -->
 
       <b-row class="py-5">
         <hr>
       </b-row>
 
-      <section>       <!-- Our Work Section -->
+        <!-- Our Work Section -->
+<!--       <section> -->
         <b-row class="justify-content-center pb-5">
           <h3>OUR WORK</h3>
         </b-row>
@@ -46,20 +50,21 @@
             <home-projects-card/>
           </b-col>
         </b-row>
-      </section>
+<!--       </section> -->
 
       <b-row class="py-5">
         <hr>
       </b-row>
 
-      <section>     <!-- Partners Section -->
+        <!-- Partners Section -->
+<!--       <section>      -->
         <b-row class="justify-content-center pb-5">
           <h3>OUR PARTNERS</h3>
         </b-row>
         <b-row class="justify-content-center">
           <home-partners-section/>
         </b-row>
-      </section>
+<!--       </section> -->
 
     </b-container>
   </section>

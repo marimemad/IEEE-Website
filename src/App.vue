@@ -1,12 +1,9 @@
 <template>
   <div id="app">
-    <!-- For social media icons as they usually follow copyright laws -->
-    <app-navigation/>
-    <transition
-      name="fade"
-      mode="out-in">
-      <router-view style="z-index:0"></router-view>
-    </transition>
+        <app-navigation/>
+        <transition name="fade" mode="out-in">
+          <router-view style="z-index:0; overflow:hidden"></router-view>
+        </transition>
   </div>
 </template>
 

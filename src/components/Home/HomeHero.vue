@@ -22,6 +22,7 @@ export default {
   background-size: cover;
   width: 100%;
   height: 90vh;
+  min-height: 400px;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
