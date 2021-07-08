@@ -63,7 +63,7 @@ export default {
   box-shadow: 0 10px 10px -2px rgba(0,0,0,.4);
 }
 .dark-nav {
-  background-color: #1a1a2e;
+  background-color: #00629B;
 }
 
 .text {
