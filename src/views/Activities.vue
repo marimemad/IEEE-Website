@@ -1,6 +1,5 @@
 <template>
   <div id="activities">
-    <!-- TODO Add navbar component -->
     <div id="activity-landing">
       <div id="activity-heading">
         <h1 data-aos="fade-up" data-aos-duration="4000" data-aos-offset="200" data-aos-easing="linear">

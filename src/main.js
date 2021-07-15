@@ -15,7 +15,6 @@ import 'aos/dist/aos.css';
 import "bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
 
-
 Vue.use(BootstrapVue)
 Vue.use(BootstrapVueIcons)
 Vue.use(VueRouter)
@@ -24,7 +23,7 @@ Vue.config.productionTip = false
 
 new Vue({
   created() {
-    AOS.init({delay: 300});
+    AOS.init({delay: 300, once: true, disable: 'phone'});
   },
   router,
   render: h => h(App)

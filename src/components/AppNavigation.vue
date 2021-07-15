@@ -1,5 +1,5 @@
 <template>
-  <section class="navigation">
+  <div class="navigation">
     <!-- NOTICE when changing toggleable you will have to change number of pixels below for animation -->
     <b-navbar toggleable="lg" class="dark-nav" type="dark" >
       <b-navbar-brand tabindex="0" class="text" to="/">IEEE ZSB <!-- ADD SVG LOGO --></b-navbar-brand>
@@ -31,7 +31,7 @@
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -40,11 +40,7 @@ export default {
   data() {
     return {
       lang: "EN",
-      navbarCollapse: 800,
     }
-  },
-  props: {
-/*     navbarCollapse */
   },
   methods: {
     changeSiteLangToAR() {
@@ -60,14 +56,14 @@ export default {
 
 <style scoped>
 .navigation {
-  position: sticky;
+  position: fixed;
   width: 100%;
   top: 0;
   z-index: 1;
   box-shadow: 0 10px 10px -2px rgba(0,0,0,.4);
 }
 .dark-nav {
-  background-color: #1a1a2e;
+  background-color: #00629B;
 }
 
 .text {

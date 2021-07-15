@@ -6,7 +6,7 @@
 
 import CardWithButton from './CardsTemplates/CardWithButton'
 export default {
-  name: "HomeProjectsCard",
+  name: "HomeCSCard",
   components: {
     CardWithButton,
   },

@@ -1,16 +1,16 @@
 <template>
-  <div class="my-card" data-aos-once="true" data-aos="fade-in">
-    <b-icon-eye-fill class="img-top" />
-      <div class="card-body">
-        <h5 class="card-title">CS Branch</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-  </div>
+<div class="my-card" data-aos-once="true" data-aos="fade-in">
+    <b-icon-person-check-fill class="img-top"/>
+    <div class="card-body">
+      <h5 class="card-title">Membership Benfits</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+</div>
 </template>
 
 <script>
 export default {
-  name: "VisionCard",
+  name: "MembershipCard"
 }
 </script>
 

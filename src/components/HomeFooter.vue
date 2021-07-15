@@ -41,7 +41,7 @@ export default {
 <style scoped>
 footer {
   min-height: 180px;
-  background-color: #1a1a2e;
+  background-color: #00629B;
   padding: 2em;
   color: white;
 }
@@ -52,5 +52,9 @@ footer {
 }
 .link:hover {
   opacity: 0.7;
+}
+
+.b-icon {
+  color: white;
 }
 </style>
