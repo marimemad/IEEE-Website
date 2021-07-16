@@ -23,7 +23,7 @@ Vue.config.productionTip = false
 
 new Vue({
   created() {
-    AOS.init({delay: 300});
+    AOS.init({delay: 300, once: true, disable: 'phone'});
   },
   router,
   render: h => h(App)

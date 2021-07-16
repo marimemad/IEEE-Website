@@ -1,10 +1,11 @@
 <template>
-  <div class="hero-image">
+  <div class="hero">
     <div data-aos-once="true" data-aos="fade-up" class="hero-text">
       <h2>
         <strong>IEEE EXPERIENCE</strong>
         <br>
         <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error veritatis magni delectus quae quo nulla. Ea corporis pariatur tenetur architecto!</small>
+<!--         <a href="#section2">click me</a> -->
       </h2>
     </div>
   </div>
@@ -17,8 +18,8 @@ export default {
 </script>
 
 <style scoped>
-.hero-image {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../assets/blurred-hero-bg-opt.jpg");
+.hero{
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../assets/bluredhomehero.jpg");
   background-size: cover;
   width: 100%;
   height: 90vh;
