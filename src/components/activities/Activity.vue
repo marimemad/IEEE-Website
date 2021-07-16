@@ -20,7 +20,7 @@ export default {
     },
     backgroundColor: {
       type: String,
-      default: "#FFF",
+      default: "#007377",
     },
     backgroundImage: {
       type: String,
@@ -47,7 +47,9 @@ export default {
   background-size: cover;
   padding: 20px;
   border-radius: 10px;
-  border: 1px solid #cfcfcf;
+  border: 1px solid #000;
+  height: 80vh;
+  color: #fff;
 }
 
 .activity-duration {
