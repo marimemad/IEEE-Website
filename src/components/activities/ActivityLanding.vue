@@ -34,7 +34,7 @@ export default {
 #activity-landing {
   height: 100vh;
   background-size: cover;
-  box-shadow: 0 7px 3px -3px #001d3d;
+  /* box-shadow: 0 7px 25px 0px #000; */
 }
 
 #activity-heading {
